@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>CRUDS</title>
+</head>
+<body style="background-color: #222;">
+    <nav>
+        <a class="navbar-brand" id="tit">product management system (CRUDS)</a>
+      </nav>
+
+      <div class="container mt-5 mem " >
+        <input type="text" placeholder="title" id="title">
+        <div id="p">
+            <input type="number" onkeyup="gettotal()" placeholder="price" id="price">
+            <input type="number" onkeyup="gettotal()" placeholder="taxes" id="taxes">
+            <input type="number" onkeyup="gettotal()" placeholder="ads" id="ads">
+            <input type="number" onkeyup="gettotal()" placeholder="discount" id="discount">
+            <small id="total"></small>
+        </div>
+        <input type="number" placeholder="amount" id="count">
+        <input type="text" placeholder="category" id="category">
+        <div id="btn">
+            <button type="button" class="btn btn-outline-success" id="create">CREATE New item</button>
+             <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" onkeyup="searchbox(this.value)" placeholder="Search" aria-label="Search" id="search">
+          <button class="btn btn-outline-secondary " type="button" onclick="searchclick(this.id)" style="width: 50%; " id="searchbytitle">Search by title</button>
+          <button class="btn btn-outline-secondary " type="button" onclick="searchclick(this.id)" style="width: 50%;" id="searchbycategory">Search by category</button>
+        </form>
+            <button type="button" class="btn btn-outline-danger mt-3" id="delete">DELETE all items</button>
+        </div>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>count</th>
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+            <tbody id="tbody">
+              
+            </tbody>
+        </table>
+        </div>
+        <footer class="bg-dark text-center text-white mt-5">
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2023 Copyright:
+              <a class="text-white" href="https://github.com/iamMalekAmin">Malek Amin</a>
+            </div>
+          </footer>
+        <script src="js/popper.min.js"></script>
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+          <script src="js/main.js"></script>
+</body>
+</html>
