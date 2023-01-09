@@ -105,7 +105,7 @@ function savedata(){
         deletee.classList.add('yzhr');
     }
 }
-savedata()
+
 
 //delete one item !!!
 function deletitem(i){
